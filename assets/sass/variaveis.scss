@@ -1,0 +1,14 @@
+$Branco: #fff;
+$Preto: #000000;
+$Roxo: #4455DD;
+
+$Fonte: 'Nunito', sans-serif;
+
+%Hover{
+    -webkit-transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+}
+
+// @extend %Hover;

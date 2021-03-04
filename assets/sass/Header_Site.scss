@@ -1,0 +1,134 @@
+.Header_Site{
+    background-image: url('../../dist/img/Bg_Header.png');
+    background-size: 100% 123%;
+    background-repeat: no-repeat;
+    border-top: 10px solid #fff;
+    .container{
+        justify-content: space-between;
+        .Header_Site_Logo{
+            max-width: 100px;
+            padding: 10px 0;
+            img:nth-child(1){
+                width: 100%;
+                position: relative;
+                z-index: 9999999999999;
+                @extend %Hover;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+            img:nth-child(2){
+                position: absolute;
+                top: 0;
+                left: 55px;
+                width: 383px;
+            }
+        }
+        .Header_Site_Menu{
+            max-width: 603px;
+            width: 100%;
+            ul{
+                justify-content: space-between;
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    @extend %Hover;
+                    li{
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                    &:hover{
+                        text-decoration: underline;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+    .Saiba_Mais{
+        padding: 96px 0 0 0;
+        text-align: center;
+        .container{
+            h5{
+                color: $Branco;
+                font-weight: 100;
+                line-height: 15px;
+                opacity: .5;
+                font-size: 13px;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+            }
+            h3{
+                color: $Branco;
+                font-weight: 100;
+                font-size: 50px;
+                opacity: 0.7;
+                padding: 10px 0 50px;
+            }
+            .Saiba_Mais_Content{
+                justify-content: space-between;
+                margin: 0 auto;
+                max-width: 400px;
+                width: 100%;
+                z-index: 9999999999999;
+                position: relative;
+                a{
+                    color: $Branco;
+                    text-transform: uppercase;
+                    font-size: 13px;
+                    text-decoration: none;
+                    @extend %Hover;
+                    &:hover{
+                        text-decoration: underline;
+                        transform: scale(1.1);
+                    }
+                }
+                img{
+                    position: absolute;
+                    right: -320px;
+                    top: -30px;
+                    // animation: rotateEstrela 5s infinite;
+                }
+            }
+            .Como_Funciona{
+                background: url(../../dist/img/Homem_Mundo.png);
+                position: relative;
+                top: -120px;
+                height: 880px;
+                background-repeat: no-repeat;
+                background-position: top;
+                .Como_Funciona_Content{
+                    position: absolute;
+                    bottom: 180px;
+                    width: 100%;
+                    img{
+                        position: absolute;
+                        left: 42px;
+                        top: -26px;
+                    }
+                    h3{
+                        font-size: 40px;
+                        padding: 30px 0 50px;
+                        max-width: 728px;
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+                    h5{
+                        opacity: 0.9;
+                    }
+                }
+                .Como_Funciona_Video{
+                    position: absolute;
+                    bottom: -170px;
+                    width: 100%;
+                    img{
+                        width: 980px;
+                        height: 354px;
+                    }
+                }
+            }
+        }
+    }
+}

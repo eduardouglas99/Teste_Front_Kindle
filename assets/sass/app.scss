@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+@import 'variaveis.scss';
+@import 'components.scss';
+@import 'Header_Site.scss';
+@import 'Section_Beneficios.scss';
+@import 'Site_Footer.scss';
+
+a, button{
+    &:hover{
+        @extend %Hover;
+    }
+}
+
+
+button{
+    outline: none;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.Btn_Default{
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    padding: 20px 0;
+    border-radius: 0px 25px 25px 25px;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    width: 215px;
+    cursor: pointer;
+    @extend %Hover;
+    &:hover{
+        box-shadow: -15px 20px 28px -15px #fff;
+    }
+}
+
+@keyframes rotateEstrela{
+    0% { top: 0}
+    25% { top: 50px; }
+    50% { left: 50px; }
+    100% { top: 100px; left: 100%; }
+
+    
+}
