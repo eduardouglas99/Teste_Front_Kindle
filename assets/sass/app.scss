@@ -11,8 +11,8 @@
 @import 'variaveis.scss';
 @import 'components.scss';
 @import 'Header_Site.scss';
-@import 'Section_Beneficios.scss';
-@import 'Site_Footer.scss';
+@import 'Section_CalculeSuaEconomia.scss';
+@import 'Section_Vantagens.scss';
 
 a, button{
     &:hover{
@@ -20,10 +20,23 @@ a, button{
     }
 }
 
-
-button{
-    outline: none;
+.title{
+    color: $Branco;
+    font-weight: 100;
+    font-size: 50px;
+    padding: 10px 0 50px;
 }
+
+.subtitle{
+    color: $Branco;
+    font-weight: 100;
+    line-height: 15px;
+    opacity: .5;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
 
 .flex{
     display: flex;
@@ -37,6 +50,7 @@ button{
 .container{
     max-width: 1080px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .Btn_Default{
@@ -50,6 +64,7 @@ button{
     font-size: 13px;
     line-height: 15px;
     width: 215px;
+    outline: none;
     cursor: pointer;
     @extend %Hover;
     &:hover{
@@ -58,10 +73,8 @@ button{
 }
 
 @keyframes rotateEstrela{
-    0% { top: 0}
-    25% { top: 50px; }
-    50% { left: 50px; }
-    100% { top: 100px; left: 100%; }
-
-    
+    0% { transform: translate(30px, 30px); }
+    25% { transform: translate(90px, 60px); }
+    50% { transform: translate(120px, 30px); }
+    100% { transform: translate(30px, 30px); }
 }

@@ -1,6 +1,6 @@
 .Header_Site{
     background-image: url('../../dist/img/Bg_Header.png');
-    background-size: 100% 123%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     border-top: 10px solid #fff;
     .container{
@@ -52,20 +52,7 @@
         text-align: center;
         .container{
             h5{
-                color: $Branco;
-                font-weight: 100;
-                line-height: 15px;
-                opacity: .5;
-                font-size: 13px;
-                text-transform: uppercase;
-                letter-spacing: 4px;
-            }
-            h3{
-                color: $Branco;
-                font-weight: 100;
-                font-size: 50px;
                 opacity: 0.7;
-                padding: 10px 0 50px;
             }
             .Saiba_Mais_Content{
                 justify-content: space-between;
@@ -89,24 +76,27 @@
                     position: absolute;
                     right: -320px;
                     top: -30px;
-                    // animation: rotateEstrela 5s infinite;
+                    animation: rotateEstrela 5s linear infinite;
                 }
             }
             .Como_Funciona{
                 background: url(../../dist/img/Homem_Mundo.png);
                 position: relative;
-                top: -120px;
-                height: 880px;
+                top: -70px;
+                height: 810px;
                 background-repeat: no-repeat;
                 background-position: top;
+                display: flex;
+                justify-content: center;
                 .Como_Funciona_Content{
                     position: absolute;
-                    bottom: 180px;
+                    bottom: 100px;
                     width: 100%;
                     img{
                         position: absolute;
                         left: 42px;
                         top: -26px;
+                        animation: rotateEstrela 5s linear infinite;
                     }
                     h3{
                         font-size: 40px;
@@ -121,13 +111,44 @@
                 }
                 .Como_Funciona_Video{
                     position: absolute;
-                    bottom: -170px;
+                    bottom: -580px;
                     width: 100%;
+                    background: url('../../dist/img/Video.png');
+                    height: 637px;
+                    background-repeat: no-repeat;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    max-width: 980px;
                     img{
-                        width: 980px;
-                        height: 354px;
+                        cursor: pointer;
+                    }
+                    img:nth-child(2){
+                        cursor: pointer;
+                        position: absolute;
+                        top: -130px;
+                        right: -70px;
+                        cursor: initial;
                     }
                 }
+            }
+        }
+        .Banner_Fazenda{
+            background: url(../../dist/img/Ilustra_Farm.png);
+            background-repeat: no-repeat;
+            height: 500px;
+            position: relative;
+            bottom: -140px;
+            margin: 0 auto;
+            width: 100%;
+            background-position: top;
+            background-size: 100% 180%;
+            img{
+                position: relative;
+                bottom: -210px;
+                width: 80%;
+                left: -30px;
+                height: 250px;
             }
         }
     }
