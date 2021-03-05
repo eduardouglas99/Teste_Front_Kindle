@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+    AOS.init();
     
     // Scroll Suave
     $('.link-scroll').click(function(){
@@ -20,5 +22,5 @@ $(document).ready(function(){
         var PerguntaClick = $(this);
         PerguntaClick.addClass("current");
         $(".current").find(".OpenText").slideToggle('slow');
-    })
+    });
 });

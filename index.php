@@ -10,9 +10,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="dist/lib/jquery.mask.js"></script>
     <script type="text/javascript" src="dist/js/app.js?v=20210118v1"></script>
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/f9040905d9.js" crossorigin="anonymous"></script>
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
 </head>
 
 <body>
@@ -129,7 +129,7 @@
                     <img src="dist/img/Grid-Item-6.png" alt="">
                 </div>
             </div>
-            <img src="dist/img/Ilustra_Predio.png" alt="">
+            <img src="dist/img/Ilustra_Predio.png" alt="" data-aos="fade-right">
         </div>
     </section>
     <section class="Section_Solicitar_Proposta" id="Solicitar_Proposta">
@@ -214,7 +214,7 @@
     <footer class="Footer_Site">
         <div class="container flex">
             <div class="Footer_Site_Ilustracao">
-                <img src="dist/img/Ilustracao_Footer.png" alt="">
+                <img src="dist/img/Ilustracao_Footer.png" alt="" data-aos="fade-left">
             </div>
             <div class="Footer_Site_Content flex">
                 <p>®2020 eva energia - todos os direitos reservados</p>
