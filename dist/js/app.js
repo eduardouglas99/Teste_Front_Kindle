@@ -1,6 +1,18 @@
 $(document).ready(function(){
 
     AOS.init();
+
+
+    // Abrindo e fechando a Modal
+    $('#OpenModal').click(function(){
+        $('.Modal_SaibaMais').show('slow');
+        $('.Modal_SaibaMais').css('display','flex');
+    });
+
+    $('#CloseModal').click(function(){
+        $('.Modal_SaibaMais').hide('slow');
+    });
+
     
     // Scroll Suave
     $('.link-scroll').click(function(){
@@ -12,8 +24,9 @@ $(document).ready(function(){
     });
 
     // Mascara calcule sua economia
-    $('#valor').mask('#.##0,00', {reverse: true});
-    $('#telefone').mask('(000)00000-0000');
+    $('#CEvalor').mask('#.##0,00', {reverse: true});
+    $('#CEtelefone, #SPtelefone').mask('(000)00000-0000');
+    $("#SPcnpj").mask("99.999.999/9999-99");
 
     // Abrindo a box do Faq
     $('.Section_Duvidas .container .Section_Duvidas_Box .Section_Duvidas_Box_Item').click(function(){

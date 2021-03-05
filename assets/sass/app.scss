@@ -16,6 +16,7 @@
 @import 'Section_Solicitar_Proposta.scss';
 @import 'Section_Duvidas.scss';
 @import 'Footer_Site.scss';
+@import 'Modal_SaibaMais.scss';
 
 a, button{
     &:hover{
@@ -76,8 +77,19 @@ a, button{
 }
 
 @keyframes rotateEstrela{
-    0% { transform: translate(30px, 30px); }
-    25% { transform: translate(90px, 60px); }
-    50% { transform: translate(120px, 30px); }
-    100% { transform: translate(30px, 30px); }
+    // 0% { transform: translate(30px, 30px); }
+    // 25% { transform: translate(90px, 60px); }
+    // 50% { transform: translate(120px, 30px); }
+    // 100% { transform: translate(30px, 30px); }
+    
+    100%  {transform: rotate(550deg);}
+}
+
+@keyframes textoAnimado{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
 }

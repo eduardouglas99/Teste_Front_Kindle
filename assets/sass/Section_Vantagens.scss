@@ -8,6 +8,12 @@
     h3{
         font-weight: 500;
         padding: 30px 0 100px;
+        max-width: 710px;
+        margin: 0 auto;
+        animation: textoAnimado 4s steps(40) 1s normal both;
+        white-space: nowrap;
+        overflow: hidden;
+        text-align: center;
     }
     .Section_Vantagens_Box{
         max-width: 981px;
