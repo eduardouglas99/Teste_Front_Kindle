@@ -211,6 +211,27 @@
             </div>
         </div>
     </section>
+    <footer class="Footer_Site">
+        <div class="container flex">
+            <div class="Footer_Site_Ilustracao">
+                <img src="dist/img/Ilustracao_Footer.png" alt="">
+            </div>
+            <div class="Footer_Site_Content flex">
+                <p>®2020 eva energia - todos os direitos reservados</p>
+                <div class="Footer_Site_Content_RedesSocias flex">
+                    <a href="#">
+                        <i class="fab fa-instagram instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-linkedin-in linkedin"></i>            
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twitter twitter"></i>            
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
