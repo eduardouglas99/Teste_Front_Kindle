@@ -41,8 +41,8 @@
                 </ul>
             </div>
             <div class="Header_Site_Btn">
-                <a href="#">
-                <button class="Btn_Default">Quero uma Proposta</button>
+                <a href="#Solicitar_Proposta" class="link-scroll">
+                    <button class="Btn_Default">Quero uma Proposta</button>
                 </a>
             </div>
         </div>
@@ -132,7 +132,85 @@
             <img src="dist/img/Ilustra_Predio.png" alt="">
         </div>
     </section>
-
+    <section class="Section_Solicitar_Proposta" id="Solicitar_Proposta">
+        <div class="container">
+            <h3 class="title">Solicite uma proposta</h3>
+            <form class="Solicitar_Proposta_Form flex">
+                <div class="Solicitar_Proposta_Form_Campos">
+                    <label for="">Nome</label>
+                    <input type="text" required>
+                </div>
+                <div class="Solicitar_Proposta_Form_Campos">
+                    <label for="">Empresa</label>
+                    <input type="text" required>
+                </div>
+                <div class="Solicitar_Proposta_Form_Campos">
+                    <label for="">Email</label>
+                    <input type="text" required>
+                </div>
+                <div class="Solicitar_Proposta_Form_Campos">
+                    <label for="">Cargo</label>
+                    <input type="text" required>
+                </div>
+                <div class="Solicitar_Proposta_Form_Campos">
+                    <label for="">Telefone</label>
+                    <input type="text" required>
+                </div>
+                <div class="Solicitar_Proposta_Form_Campos">
+                    <label for="">Cnpj</label>
+                    <input type="text" required>
+                </div>
+                <div class="Solicitar_Proposta_Form_Anexo flex">
+                    <p class="subtitle">Envie a última conta de energia da sua empresa</p>
+                    <input type="file" id="File_Anexo"required>
+                    <label for="File_Anexo" class="Btn_Default" >Anexar arquivo</label>
+                </div>
+                <button class="Btn_Default">Enviar Informações</button>
+            </form>
+        </div>
+    </section>
+    <section class="Section_Duvidas" id="Faq">
+        <div class="container">
+            <h3 class="title">Dúvidas frequentes</h3>
+            <div class="Section_Duvidas_Box flex">
+            <div class="Section_Duvidas_Box_Item flex">
+                <h4>1- Existe algum pré requisito para contratar os serviços da Eva Energia?</h4>
+                <i class="fas fa-chevron-down"></i>
+                <p class="OpenText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, neque quo officia quaerat ratione nihil,
+                     minus vel provident maxime rem porro error nobis eum numquam quas possimus nostrum illo suscipit?</p>
+            </div>
+            <div class="Section_Duvidas_Box_Item flex">
+                <h4>2- Quais são as áreas que vocês atuam?</h4>
+                <i class="fas fa-chevron-down"></i>
+                <p class="OpenText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, neque quo officia quaerat ratione nihil,
+                     minus vel provident maxime rem porro error nobis eum numquam quas possimus nostrum illo suscipit?</p>
+            </div>
+            <div class="Section_Duvidas_Box_Item flex">
+                <h4>3- É preciso fazer alguma instalação especial?</h4>
+                <i class="fas fa-chevron-down"></i>
+                <p class="OpenText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, neque quo officia quaerat ratione nihil,
+                     minus vel provident maxime rem porro error nobis eum numquam quas possimus nostrum illo suscipit?</p>
+            </div>
+            <div class="Section_Duvidas_Box_Item flex">
+                <h4>4- Existe algum investimento inicial na assinatura do contrato?</h4>
+                <i class="fas fa-chevron-down"></i>
+                <p class="OpenText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, neque quo officia quaerat ratione nihil,
+                     minus vel provident maxime rem porro error nobis eum numquam quas possimus nostrum illo suscipit?</p>
+            </div>
+            <div class="Section_Duvidas_Box_Item flex">
+                <h4>5- Qual o tempo mínimo de contrato?</h4>
+                <i class="fas fa-chevron-down"></i>
+                <p class="OpenText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, neque quo officia quaerat ratione nihil,
+                     minus vel provident maxime rem porro error nobis eum numquam quas possimus nostrum illo suscipit?</p>
+            </div>
+            <div class="Section_Duvidas_Box_Item flex">
+                <h4>6- Quem irá prover minha energia?</h4>
+                <i class="fas fa-chevron-down"></i>
+                <p class="OpenText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, neque quo officia quaerat ratione nihil,
+                     minus vel provident maxime rem porro error nobis eum numquam quas possimus nostrum illo suscipit?</p>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>

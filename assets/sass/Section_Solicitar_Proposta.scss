@@ -1,0 +1,80 @@
+.Section_Solicitar_Proposta{
+    padding: 100px 10px;
+    background-color: #2AD18A;
+    .container{
+        h3{
+            font-weight: 400;
+        }
+        .Solicitar_Proposta_Form{
+            max-width: 840px;
+            width: 100%;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            justify-content: space-between;
+            .Solicitar_Proposta_Form_Campos{
+                flex-direction: column;
+                max-width: 405px;
+                width: 100%;
+                label{
+                    width: 100%;
+                    text-align: left;
+                    display: block;
+                    font-weight: 400;
+                    letter-spacing: 2px;
+                    padding: 0 0 6px 6px;
+                    color: $Branco;
+                    text-transform: uppercase;
+                    &:hover{
+                        color: #16a78a;
+                    }
+                }
+                input{
+                    width: 100%;
+                    height: 60px;
+                    background-color: #8DFFCF;
+                    border: 1px solid #8DFFCF;
+                    border-radius: 3px;
+                    outline: 0;
+                    color: #16a78a;
+                    padding: 0 10px;
+                    font-size: 16px;
+                    border: none;
+                    opacity: 0.5;
+                    &:focus{
+                        // background-color: #16a78a;
+                        border: 1px solid #16a78a;
+                    }
+                }
+            }
+            .Solicitar_Proposta_Form_Campos:nth-child(3), .Solicitar_Proposta_Form_Campos:nth-child(4){
+                padding: 20px 0;
+            }
+            .Solicitar_Proposta_Form_Anexo{
+                justify-content: space-between;
+                width: 100%;
+                margin: 27px 0 47px;
+                padding: 29px 16px 26px 26px;
+                border: 2px dotted #fff;
+                padding: 20px 16px 18px 26px;
+                p{
+                    color: $Branco;
+                    font-weight: 400;
+                    opacity: 1; 
+                    letter-spacing: 3px;
+                }
+                input{
+                    display: none;
+                    overflow: hidden;
+                }
+                label{
+                    max-width: 155px;
+                    background-color: #2ca67a;
+                    padding: 11px 0;
+                }
+            }
+            button{
+                margin: 0 auto;
+            }
+        }
+    }
+}

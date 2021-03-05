@@ -1,0 +1,41 @@
+.Section_Duvidas{
+    padding: 100px 100px;
+    .container{
+        h3{
+            color: #565757;
+            font-weight: 300;
+            text-align: left;
+            padding: 0 0 40px 10px;
+            font-size: 40px;
+        }
+        .Section_Duvidas_Box{
+            max-width: 1110px;
+            width: 100%;
+            flex-direction: column;
+            .Section_Duvidas_Box_Item{
+                justify-content: space-between;
+                width: 100%;
+                background-color: #EFEFEF;
+                font-weight: 400;
+                font-size: 18px;
+                padding: 34px 39px 31px 38px;
+                border-radius: 0px 25px 25px 25px;
+                margin: 0 0 10px 0;
+                flex-wrap: wrap;
+                cursor: pointer;
+                h4{
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+                p{
+                    width: 100%;
+                    padding: 30px 0 0 0;
+                    text-align: left;
+                    color: #737272;
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
