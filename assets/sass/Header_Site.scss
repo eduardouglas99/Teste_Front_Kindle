@@ -5,23 +5,26 @@
     border-top: 10px solid #fff;
     .container{
         justify-content: space-between;
+        padding: 0 20px;
         .Header_Site_Logo{
             max-width: 100px;
             padding: 10px 0;
+            height: 100px;
             img:nth-child(1){
                 width: 100%;
                 position: relative;
                 z-index: 9999999999999;
+                left: -10px;
                 @extend %Hover;
                 &:hover{
                     transform: scale(1.1);
                 }
             }
             img:nth-child(2){
-                position: absolute;
-                top: 0;
-                left: 55px;
-                width: 383px;
+                position: relative;
+                top: -120px;
+                left: -205px;
+                max-width: 383px;
             }
         }
         .Header_Site_Menu{
@@ -46,6 +49,9 @@
                 }
             }
         }
+    }
+    .Header_Container_Mobile{
+        display: none;
     }
     .Saiba_Mais{
         padding: 96px 0 0 0;
@@ -112,14 +118,13 @@
                 .Como_Funciona_Video{
                     position: absolute;
                     bottom: -580px;
-                    width: 100%;
+                    width: 80%;
                     background: url('../../dist/img/Video.png');
-                    height: 637px;
+                    height: 500px;
                     background-repeat: no-repeat;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    max-width: 980px;
                     img{
                         cursor: pointer;
                     }
@@ -152,4 +157,188 @@
             }
         }
     }
+}
+
+@media only screen and (max-width: 1024px){
+    .Header_Site{
+        .container{
+            .Header_Site_Logo{
+                max-width: 70px;
+                img:nth-child(2){
+                    left: -235px;
+                }
+            }
+            .Header_Site_Menu{
+                max-width: 440px;
+                width: 100%;
+                ul{
+                    a{
+                        li{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            .Header_Site_Btn{
+                a{
+                    button{
+                        font-size: 10px;
+                        width: 155px;
+                        padding: 15px 0;
+                    }
+                }
+            }
+        }
+        .Saiba_Mais{
+            .container{
+                .Como_Funciona{
+                    .Como_Funciona_Video {
+                        bottom: -470px;
+                        width: 70%;
+                        height: 440px;
+                        img:nth-child(2){
+                            top: -70px;
+                            right: -30px;
+                            width: 20%;
+                            max-width: 200px;
+
+                        }
+                    }
+                }
+                .Saiba_Mais_Content{
+                    img{
+                        right: -160px;
+                        top: 40px;
+                    }
+                }
+            }
+            .Banner_Fazenda{
+                height: 360px;
+                img{
+                    bottom: -120px;
+                    object-fit: contain;
+                }
+            }
+        }
+    }  
+}
+
+@media only screen and (max-width: 768px){
+    .Header_Site{
+        .container_Menu{
+            display: none;
+        }
+        .Header_Container_Mobile{
+            display: flex;
+            background-color: #ffffff;
+            flex-direction: column;
+            padding: 0;
+            .Header_Container_Menu{
+                max-width: 768px;
+                width: 100%;
+                justify-content: space-between;
+                padding: 0 20px;
+                .Header_Site_Logo{
+                    max-width: 80px;
+                    a{
+                        img{
+                            position: initial;
+                        }
+                    }
+                }
+                .Header_Site_Btn{
+                    i{
+                        font-size: 40px;
+                        color: #1a8ab9;
+                    }
+                }
+            }
+            .Header_Container_SubMenu{
+                display: none;
+                padding: 70px;
+                width: 100%;
+                height: 90vh;
+                background-color: rgb(44, 83, 97);
+                flex-direction: column;
+                justify-content: center;
+                .Header_Site_Menu{
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        a{
+                            li{
+                                font-size: 20px;
+                                padding: 30px 0;
+                            }
+                        }
+                    }
+                }
+                .Header_Site_Btn{
+                    a{
+                        button{
+                            margin: 50px 0 0;
+                            width: 215px;
+                            padding: 20px 0;
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+        .Saiba_Mais{
+            .container{
+                h3{
+                    font-size: 30px;
+                }
+                padding: 0 20px;
+                .Como_Funciona{
+                    height: 770px;
+                    background-size: 100% 100%;
+                    .Como_Funciona_Content{
+                        h3{
+                            font-size: 30px;
+                            max-width: 768px;
+                        }
+                        img{
+                            position: relative;
+                            left: 152px;
+                            top: -291px;
+                        }
+                    }
+                    .Como_Funciona_Video {
+                        height: 380px;
+                        bottom: -380px;
+                        border-radius: 15px;
+                        img:nth-child(1){
+                            left: 0px;
+                            position: relative;
+                        }
+                        img:nth-child(2){
+                            top: -70px;
+                            right: -20px;
+                            width: 30%;
+                        }
+                    }
+                }
+                .Saiba_Mais_Content {
+                    max-width: 768px;
+                    flex-direction: column-reverse;
+                    a{
+                        margin: 0 0 20px 0;
+                    }
+                    img{
+                        right: 310px;
+                        top: 110px;
+                    }
+                }
+            }
+            .Banner_Fazenda{
+                height: 260px;
+                bottom: -120px;
+                img{
+                    bottom: -60px;
+                }
+            }
+        }
+    }  
 }

@@ -1,5 +1,5 @@
 .Section_Solicitar_Proposta{
-    padding: 100px 10px;
+    padding: 100px 20px;
     background-color: #2AD18A;
     .container{
         h3{
@@ -83,4 +83,45 @@
             }
         }
     }
+}
+
+@media only screen and (max-width:1024px){
+    .Section_Solicitar_Proposta{
+        .container{
+            .Solicitar_Proposta_Form{
+                .Solicitar_Proposta_Form_Campos{
+                    max-width: 355px;
+                }
+            }
+        }
+    } 
+}
+
+@media only screen and (max-width:768px){
+    .Section_Solicitar_Proposta{
+        .container{
+            h3{
+                font-size: 30px;
+            }
+            .Solicitar_Proposta_Form{
+                justify-content: center;
+                .Solicitar_Proposta_Form_Campos{
+                    max-width: 768px;
+                    width: 80%;
+                    padding: 10px 0;
+                }
+                .Solicitar_Proposta_Form_Campos:nth-child(3), .Solicitar_Proposta_Form_Campos:nth-child(4){
+                    padding: 10px 0;
+                }
+                .Solicitar_Proposta_Form_Anexo{
+                    width: 80%;
+                    padding: 20px 10px 18px 10px;
+                    flex-direction: column;
+                    p{
+                        padding: 0 0 20px 0;
+                    }
+                }
+            }
+        }
+    } 
 }

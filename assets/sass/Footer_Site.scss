@@ -57,6 +57,11 @@
 @media only screen and (max-width:768px){
     .Footer_Site{
         .container{
+            .Footer_Site_Ilustracao{
+                img{
+                    max-width: 768px;
+                }
+            }
             .Footer_Site_Content{
                 flex-direction: column-reverse;
                 .Footer_Site_Content_RedesSocias{

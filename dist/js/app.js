@@ -13,6 +13,17 @@ $(document).ready(function(){
         $('.Modal_SaibaMais').hide('slow');
     });
 
+    $('#Btn_Modal').click(function(){
+        $('.Modal_SaibaMais').hide('slow');
+    });
+
+
+    // Abrindo e fechando o menu mobile
+    $('#Btn-mobile').click(function(){
+        $('#Menu_Mobile').slideToggle('slow');
+        $('.Header_Container_SubMenu').css('display','flex');
+    });
+
     
     // Scroll Suave
     $('.link-scroll').click(function(){

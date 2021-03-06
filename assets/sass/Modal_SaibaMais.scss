@@ -14,10 +14,9 @@
         max-width: 1258px;
         width: 100%;
         background-color: #fff8f8;
-        height: 370px;
         position: relative;
         z-index: 9999999999999999999999999999999999999999;
-        padding: 78px 0;
+        padding: 40px 0;
         margin: 0 auto;
         border-radius: 15px;
         h3{
@@ -27,11 +26,12 @@
             font-size: 30px;
             text-align: center;
             font-weight: 400;
+            padding: 0 30px 32px 30px;
             span{
                 font-weight: 700;
             }
         }
-        button{
+        p.closeBtn{
             position: absolute;
             right: 50px;
             top: 50px;
@@ -47,6 +47,135 @@
         .Modal_SaibaMais_Box_Container{
             max-width: 750px;
             width: 100%;
+            margin: 0 auto;
+            height: 400px;
+            justify-content: center;
+            flex-wrap: wrap;
+            .Modal_SaibaMais_Box_Container_Content, .Modal_SaibaMais_Box_Container_Icon,
+            .Modal_SaibaMais_Box_Container_Valores, .Modal_SaibaMais_Box_Container_TemMais{
+                flex-direction: column;
+                height: 100%;
+            }
+            .Modal_SaibaMais_Box_Container_Content{
+                .Modal_SaibaMais_Box_Container_Content_Item{
+                    max-width: 267px;
+                    width: 100%;
+                    margin: 0 0 10px 0;
+                    background: url(../../dist/img/1.png);
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                    p{
+                        color: #000;
+                        opacity: 1;
+                        font-weight: 500;
+                        padding: 39px 42px 39px 25px;
+                        letter-spacing: 2px;
+                    }
+                }
+                .seconde_item{
+                    background: url(../../dist/img/2.png);
+                    background-size: 100% 100%;
+                }
+                .three_item{
+                    background: url(../../dist/img/3.png);
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                }
+                .four_item{
+                    background: url(../../dist/img/4.png);
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                }
+            }
+            .Modal_SaibaMais_Box_Container_Icon{
+                padding: 0 10px 0;
+                .Modal_SaibaMais_Box_Container_Icon_Item{
+                    justify-content: center;
+                    max-width: 91px;
+                    width: 100%;
+                    margin: 0 0 10px 0;
+                    background: url(../../dist/img/Rectangle_Icon.png);
+                    background-repeat: no-repeat;
+                    height: 97px;
+                    padding: 25px 20px;
+                }
+            }
+            .Modal_SaibaMais_Box_Container_Valores{
+                padding: 0 10px 0 0;
+                .Modal_SaibaMais_Box_Container_Valores_Item{
+                    flex-direction: column;
+                    justify-content: center;
+                    max-width: 169px;
+                    width: 100%;
+                    background-color: #efefef;
+                    border-radius: 15px 15px 15px 0;
+                    padding: 24px 18px 22px 18px;
+                    margin: 0 0 10px 0;
+                    h3{
+                        padding: 0 0 5px 0;
+                        font-size: 15px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        text-align: left;
+                        letter-spacing: 3px;
+                    }
+                    h2{
+                        font-weight: 500;
+                        font-size: 20px;
+                        text-align: left;
+                        width: 100%;
+                    }
+                }
+                .valores_fiveYears{
+                    background-color: #2DACDA;
+                    color: $Branco;
+                    h3{
+                        padding: 0 0 5px 10px;
+                    }
+                }
+                .Modal_SaibaMais_Box_Container_Valores_Item:nth-child(3){
+                    h3{
+                        padding: 0 0 5px 10px;
+                    }
+                }
+            }
+            .Modal_SaibaMais_Box_Container_TemMais{
+                background-color: #2AD18A;
+                text-align: center;
+                color: $Branco;
+                padding: 24px 20px 0;
+                border-radius: 25px 25px 25px 0px;
+                @extend %Hover;
+                &:hover{
+                    background-color: #2ca67a;
+                }
+                h5{
+                    font-size: 13px;
+                    font-weight: 300;
+                    letter-spacing: 3px;
+                    text-transform: uppercase;
+                }
+                p{
+                    max-width: 158px;
+                    font-weight: 300;
+                    font-size: 18px;
+                    margin: 33px 0 24px 0;
+                    line-height: 23px;
+                    span{
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        a{
+            text-decoration: none;
+            button{
+                display: block;
+                margin: 40px auto 0;
+                &:hover{
+                    box-shadow: 0px 10px 18px -8px #000000;
+                }
+            }
         }
     }
 }

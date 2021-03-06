@@ -17,7 +17,7 @@
 
 <body>
     <header class="Header_Site">
-        <div class="container flex">
+        <div class="container flex container_Menu">
             <div class="Header_Site_Logo">
                 <a href="#" target="_blank">
                     <img src="dist/img/Logo_Eva.png" alt="Eva Energia">
@@ -44,6 +44,41 @@
                 <a href="#Solicitar_Proposta" class="link-scroll">
                     <button class="Btn_Default">Quero uma Proposta</button>
                 </a>
+            </div>
+        </div>
+        <div class="container flex Header_Container_Mobile">
+            <div class="Header_Container_Menu flex">
+                <div class="Header_Site_Logo">
+                    <a href="#" target="_blank">
+                        <img src="dist/img/Logo_Eva.png" alt="Eva Energia">
+                    </a>
+                </div>
+                <div class="Header_Site_Btn">
+                    <i class="fas fa-bars" id="Btn-mobile"></i>
+                </div>
+            </div>
+            <div class="Header_Container_SubMenu flex" id="Menu_Mobile">
+                <div class="Header_Site_Menu">
+                    <ul class="flex">
+                        <a href="#ComoFunciona" class="link-scroll">
+                            <li>Como functiona</li>
+                        </a>
+                        <a href="#Section_Vantagens" class="link-scroll">
+                            <li>Vantagens & Sustentabilidade</li>
+                        </a>
+                        <a href="#CalculeSuaEconomia" class="link-scroll">
+                            <li>Calcule sua economia</li>
+                        </a>
+                        <a href="#Faq" class="link-scroll">
+                            <li>FAQ</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="Header_Site_Btn">
+                    <a href="#Solicitar_Proposta" class="link-scroll">
+                        <button class="Btn_Default">Quero uma Proposta</button>
+                    </a>
+                </div>
             </div>
         </div>
         <section class="Saiba_Mais" id="ComoFunciona">
@@ -214,7 +249,7 @@
     <footer class="Footer_Site">
         <div class="container flex">
             <div class="Footer_Site_Ilustracao">
-                <img src="dist/img/Ilustracao_Footer.png" alt="" data-aos="fade-left">
+                <img src="dist/img/Ilustracao_Footer.png" alt="">
             </div>
             <div class="Footer_Site_Content flex">
                 <p>®2020 eva energia - todos os direitos reservados</p>
@@ -234,10 +269,64 @@
     </footer>
     <div class="Modal_SaibaMais">
         <div class="Modal_SaibaMais_Box">
-        <h3>Agora pense o que você poderia fazer com todo esse <span>dinheiro sobrando</span> </h3>
-        <button id="CloseModal">[ x ]</button>
-            <div class="Modal_SaibaMais_Box_Container">
+            <h3>Agora pense o que você poderia fazer com todo esse <span>dinheiro sobrando</span> </h3>
+            <p id="CloseModal" class="closeBtn">[ x ]</p>
+            <div class="Modal_SaibaMais_Box_Container flex">
+                <div class="Modal_SaibaMais_Box_Container_Content flex">
+                    <div class="Modal_SaibaMais_Box_Container_Content_Item">
+                        <p class="subtitle">Economizar</p>
+                    </div>
+                    <div class="Modal_SaibaMais_Box_Container_Content_Item second_item">
+                        <p class="subtitle">Contratar Mais</p>
+                    </div>
+                    <div class="Modal_SaibaMais_Box_Container_Content_Item three_item">
+                        <p class="subtitle">Expandir o negócio</p>
+                    </div>
+                    <div class="Modal_SaibaMais_Box_Container_Content_Item four_item">
+                        <p class="subtitle">Aumentar a presença</p>
+                    </div>
+                </div>
+                <div class="Modal_SaibaMais_Box_Container_Icon flex">
+                    <div class="Modal_SaibaMais_Box_Container_Icon_Item flex">
+                        <img src="dist/img/Coin_Modal.png" alt="">
+                    </div>
+                    <div class="Modal_SaibaMais_Box_Container_Icon_Item flex">
+                        <img src="dist/img/Pessoas_Modal.png" alt="">
+                    </div>
+                    <div class="Modal_SaibaMais_Box_Container_Icon_Item flex">
+                        <img src="dist/img/Comercio_Modal.png" alt="">
+                    </div>
+                    <div class="Modal_SaibaMais_Box_Container_Icon_Item flex">
+                        <img src="dist/img/Mundo_Modal.png" alt="">
+                    </div>
+                </div>
+                <div class="Modal_SaibaMais_Box_Container_Valores flex">
+                    <div class="Modal_SaibaMais_Box_Container_Valores_Item flex">
+                        <h3>1 Mês</h3>
+                        <h2>R$500,00</h2>
+                    </div>
+                    <div class="Modal_SaibaMais_Box_Container_Valores_Item flex">
+                        <h3>1 Ano</h3>
+                        <h2>R$500,00</h2>
+                    </div>
+                    <div class="Modal_SaibaMais_Box_Container_Valores_Item flex">
+                        <h3>3 Anos</h3>
+                        <h2>R$18.000,00</h2>
+                    </div>
+                    <div class="Modal_SaibaMais_Box_Container_Valores_Item valores_fiveYears flex">
+                        <h3>5 Anos</h3>
+                        <h2>R$30.000,00</h2>
+                    </div>
+                </div>
+                <div class="Modal_SaibaMais_Box_Container_TemMais flex">
+                    <h5>e tem mais</h5>
+                    <p>Com a EVA energia além de economizar, você ainda ajuda a preservar <span>50</span> árvores. </p>
+                    <img src="dist/img/Arvores_Modal" alt="">
+                </div>
             </div>
+            <a href="#Solicitar_Proposta" class="link-scroll">
+                <button class="Btn_Default" id="Btn_Modal">Solicitar um proposta</button>
+            </a>
         </div>
     </div>
 </body>

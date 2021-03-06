@@ -1,5 +1,5 @@
 .Section_Duvidas{
-    padding: 100px 100px;
+    padding: 100px 20px;
     .container{
         h3{
             color: #565757;
@@ -44,3 +44,30 @@
     }
 }
 
+@media only screen and (max-width:768px){
+    .Section_Duvidas{
+        .container{
+            h3{
+                font-size: 30px;
+                text-align: center;
+                margin: 0 auto;
+            }
+            .Section_Duvidas_Box{
+                .Section_Duvidas_Box_Item{
+                    flex-direction: column;
+                    width: 80%;
+                    border-radius: 25px 25px 25px 25px;
+                    h4{
+                        padding: 0 0 30px 0;
+                    }
+                    i{
+                        font-size: 42px;
+                    }
+                    .OpenText{
+                        text-align: center;
+                    }
+                }
+            } 
+        } 
+    } 
+}

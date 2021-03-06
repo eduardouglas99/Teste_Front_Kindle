@@ -1,57 +1,103 @@
 .Section_Vantagens{
     background-color: #F99F1D;
-    padding: 100px 0 0;
-    h5{
-        font-weight: 300;
-        opacity: 1;
-    }
-    h3{
-        font-weight: 500;
-        padding: 30px 0 100px;
-        max-width: 710px;
-        margin: 0 auto;
-        animation: textoAnimado 4s steps(40) 1s normal both;
-        white-space: nowrap;
-        overflow: hidden;
-        text-align: center;
-    }
-    .Section_Vantagens_Box{
-        max-width: 981px;
-        width: 100%;
-        justify-content: center;
-        grid-gap: 30px;
-        grid-template-columns: repeat(2, 475px);
-        padding: 0 0 100px 0;
-        margin: 0 auto;
-        .Section_Vantagens_Box_Item{
-            justify-content: space-between;
-            background-color: #FFB546;
-            border-top-left-radius: 0;
-            border-bottom-left-radius: 25px;
-            border-top-right-radius: 25px;
-            border-bottom-right-radius: 25px;
-            padding: 0 0 0 30px;
-            @extend %Hover;
-            p{
-                color: #fff;
-                font-size: 20px;
-                max-width: 200px;
-                width: 100%;
-                text-align: left;
-            }
-            img{
+    padding: 100px 20px 0;
+    .container{
+        h5{
+            font-weight: 300;
+            opacity: 1;
+        }
+        h3{
+            font-weight: 500;
+            padding: 30px 0 100px;
+            max-width: 710px;
+            margin: 0 auto;
+            animation: textoAnimado 4s steps(40) 1s normal both;
+            white-space: nowrap;
+            overflow: hidden;
+            text-align: center;
+        }
+        .Section_Vantagens_Box{
+            max-width: 981px;
+            width: 100%;
+            justify-content: center;
+            grid-gap: 30px;
+            grid-template-columns: repeat(2, 475px);
+            padding: 0 0 100px 0;
+            margin: 0 auto;
+            .Section_Vantagens_Box_Item{
+                justify-content: space-between;
+                background-color: #FFB546;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 25px;
                 border-top-right-radius: 25px;
                 border-bottom-right-radius: 25px;
+                padding: 0 0 0 30px;
+                @extend %Hover;
+                p{
+                    color: #fff;
+                    font-size: 20px;
+                    max-width: 200px;
+                    width: 100%;
+                    text-align: left;
+                }
+                img{
+                    border-top-right-radius: 25px;
+                    border-bottom-right-radius: 25px;
+                }
+                &:hover{
+                    background-color: #5a3804;
+                }
             }
-            &:hover{
-                background-color: #5a3804;
+            img{
+                max-width: 870px;
+                width: 100%;
+                display: block;
+                margin: 0 auto;
             }
         }
-        img{
-            max-width: 870px;
-            width: 100%;
-            display: block;
-            margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .Section_Vantagens{
+        .container{
+            .Section_Vantagens_Box{
+                grid-gap: 20px;
+                grid-template-columns: repeat(2,355px);
+            }
+            img{
+                max-width: 768px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .Section_Vantagens{
+        .container{
+            h3{
+                animation: none;
+                font-size: 30px;
+                white-space: initial;
+            }
+            .Section_Vantagens_Box{
+                grid-template-columns: repeat(1,80%);
+                .Section_Vantagens_Box_Item{
+                    justify-content: space-between;
+                    p{
+                        max-width: 768px;
+                        font-size: 16px;
+                    }
+                    img{
+                        max-width: 120px;
+                    }
+                }
+            }
+            img{
+                max-width: 768px;
+                width: 100%;
+            }
         }
     }
 }

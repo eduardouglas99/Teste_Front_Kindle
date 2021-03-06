@@ -1,6 +1,7 @@
 
 .Section_CalculeSuaEconomia{
     background-color: #2ad18a;
+    padding: 0 20px;
     .Bg_Color{
         height: 200px;
     }
@@ -65,3 +66,38 @@
     }
 }
 
+@media only screen and (max-width: 1024px){
+    .Section_CalculeSuaEconomia{
+        .container{
+            .Section_CalculeSuaEconomia_Form{
+                max-width: 660px; 
+                .Section_CalculeSuaEconomia_Form_Campos{
+                    max-width: 320px;
+                    input{
+                        margin: 0 0 20px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .Section_CalculeSuaEconomia{
+        .container{
+            h3{
+                font-size: 30px;
+            }
+            .Section_CalculeSuaEconomia_Form{
+                max-width: 768px;
+                width: 80%;
+                .Section_CalculeSuaEconomia_Form_Campos{
+                    max-width: 768px;
+                }
+                button{
+                    margin: 40px auto 80px;
+                }
+            }
+        }
+    }
+}
