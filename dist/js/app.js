@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
+    // Iniciando o AOS animate
     AOS.init();
-
 
     // Abrindo e fechando a Modal
     $('#OpenModal').click(function(){

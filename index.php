@@ -99,7 +99,6 @@
                     <div class="Como_Funciona_Video">
                         <img src="dist/img/Btn_Play.png" alt="">
                         <img src="dist/img/Nuvens_Video" alt="">
-                        <!-- <img src="dist/img/Ilustra_Farm" alt=""> -->
                     </div>
                 </div>
             </div>
@@ -170,37 +169,37 @@
     <section class="Section_Solicitar_Proposta" id="Solicitar_Proposta">
         <div class="container">
             <h3 class="title">Solicite uma proposta</h3>
-            <form class="Solicitar_Proposta_Form flex">
+            <form class="Solicitar_Proposta_Form flex" id="Solicitar_Proposta_Form">
                 <div class="Solicitar_Proposta_Form_Campos">
                     <label for="SPnome">Nome</label>
-                    <input type="text" id="SPnome" required>
+                    <input type="text" id="SPnome" name="SPnome" minlength="2" pattern="[a-z\s]+$" required>
                 </div>
                 <div class="Solicitar_Proposta_Form_Campos">
                     <label for="SPempresa">Empresa</label>
-                    <input type="text" id="SPempresa" required>
+                    <input type="text" id="SPempresa" name="SPempresa" required>
                 </div>
                 <div class="Solicitar_Proposta_Form_Campos">
                     <label for="SPemail">Email</label>
-                    <input type="text" id="SPemail" required>
+                    <input type="text" id="SPemail" name="SPemail" required>
                 </div>
                 <div class="Solicitar_Proposta_Form_Campos">
                     <label for="SPcargo">Cargo</label>
-                    <input type="text" id="SPcargo" required>
+                    <input type="text" id="SPcargo" name="SPcargo" required>
                 </div>
                 <div class="Solicitar_Proposta_Form_Campos">
                     <label for="SPtelefone">Telefone</label>
-                    <input type="text" id="SPtelefone" required>
+                    <input type="text" id="SPtelefone" name="SPcargo" required>
                 </div>
                 <div class="Solicitar_Proposta_Form_Campos">
                     <label for="SPcnpj">Cnpj</label>
-                    <input type="text" id="SPcnpj" required>
+                    <input type="text" id="SPcnpj" name="SPcnpj" required>
                 </div>
                 <div class="Solicitar_Proposta_Form_Anexo flex">
                     <p class="subtitle">Envie a última conta de energia da sua empresa</p>
                     <input type="file" id="File_Anexo"required>
                     <label for="File_Anexo" class="Btn_Default" >Anexar arquivo</label>
                 </div>
-                <button class="Btn_Default">Enviar Informações</button>
+                <button class="Btn_Default" name="SPenvio">Enviar Informações</button>
             </form>
         </div>
     </section>
